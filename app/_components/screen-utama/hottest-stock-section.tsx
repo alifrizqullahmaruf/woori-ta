@@ -11,8 +11,8 @@ export function HottestStockSection() {
           there&rsquo;s a reason for it
         </h2>
         <Image
-          src={ICONS.chevronRight}
-          alt=""
+          src={ICONS.aiBadge}
+          alt="AI"
           width={21}
           height={21}
           className="mt-1 size-[21px] shrink-0"

@@ -5,10 +5,20 @@ export function TrendingStocksSection() {
   return (
     <section className="px-6 pt-10">
       <header className="mb-1.5 flex items-center justify-between gap-3">
-        <h2 className="text-typo-large font-bold leading-7">뜨자마자 주가도 쑥</h2>
+        <h2 className="flex items-center gap-1 text-typo-large font-bold leading-7">
+          <span>뜨자마자 주가도 쑥</span>
+          <Image
+            src={ICONS.trendingUp}
+            alt=""
+            width={24}
+            height={24}
+            unoptimized
+            className="size-6 shrink-0"
+          />
+        </h2>
         <Image
-          src={ICONS.chevronRight}
-          alt=""
+          src={ICONS.aiBadge}
+          alt="AI"
           width={21}
           height={21}
           className="size-[21px] shrink-0"

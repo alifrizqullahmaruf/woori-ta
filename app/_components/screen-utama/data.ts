@@ -72,7 +72,7 @@ export type Theme = {
 };
 
 export const THEMES: ReadonlyArray<Theme> = [
-  { nameKo: "MZ 소비 플랫폼", delta: "+8.2%", icon: `${ASSETS}/themes/mz-platform.svg` },
+  { nameKo: "MZ 소비 플랫폼", delta: "+8.2%", icon: `${ASSETS}/themes/mz-platform.png` },
   { nameKo: "암호화폐", delta: "+8.1%", icon: `${ASSETS}/themes/crypto.svg` },
   { nameKo: "여가", delta: "+7.5%", icon: `${ASSETS}/themes/leisure.svg` },
   { nameKo: "양자 컴퓨터", delta: "+6%", icon: `${ASSETS}/themes/quantum.svg` },
@@ -118,7 +118,7 @@ export const BRAND = {
 };
 
 export const ICONS = {
-  chevronRight: `${ASSETS}/icons/chevron-right.png`,
-  sectionAccent: `${ASSETS}/icons/section-icon.svg`,
+  aiBadge: `${ASSETS}/icons/ai-badge.png`,
+  trendingUp: `${ASSETS}/icons/section-icon.svg`,
   externalLink: `${ASSETS}/icons/external-link.svg`,
 };

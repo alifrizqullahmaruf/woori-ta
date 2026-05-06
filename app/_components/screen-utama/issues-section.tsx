@@ -10,8 +10,8 @@ export function IssuesSection() {
           <br />이 이슈가 중심이에요
         </h2>
         <Image
-          src={ICONS.chevronRight}
-          alt=""
+          src={ICONS.aiBadge}
+          alt="AI"
           width={21}
           height={21}
           className="size-[21px] shrink-0"
