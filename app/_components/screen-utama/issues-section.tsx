@@ -33,6 +33,7 @@ export function IssuesSection() {
                 alt=""
                 width={15}
                 height={15}
+                unoptimized
                 className="mt-1 size-[15px] shrink-0"
               />
             </header>

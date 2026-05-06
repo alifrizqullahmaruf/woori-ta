@@ -72,11 +72,11 @@ export type Theme = {
 };
 
 export const THEMES: ReadonlyArray<Theme> = [
-  { nameKo: "MZ 소비 플랫폼", delta: "+8.2%", icon: `${ASSETS}/themes/mz-platform.png` },
-  { nameKo: "암호화폐", delta: "+8.1%", icon: `${ASSETS}/themes/crypto.png` },
-  { nameKo: "여가", delta: "+7.5%", icon: `${ASSETS}/themes/leisure.png` },
-  { nameKo: "양자 컴퓨터", delta: "+6%", icon: `${ASSETS}/themes/quantum.png` },
-  { nameKo: "클라우드", delta: "+5.8%", icon: `${ASSETS}/themes/cloud.png` },
+  { nameKo: "MZ 소비 플랫폼", delta: "+8.2%", icon: `${ASSETS}/themes/mz-platform.svg` },
+  { nameKo: "암호화폐", delta: "+8.1%", icon: `${ASSETS}/themes/crypto.svg` },
+  { nameKo: "여가", delta: "+7.5%", icon: `${ASSETS}/themes/leisure.svg` },
+  { nameKo: "양자 컴퓨터", delta: "+6%", icon: `${ASSETS}/themes/quantum.svg` },
+  { nameKo: "클라우드", delta: "+5.8%", icon: `${ASSETS}/themes/cloud.svg` },
 ];
 
 export type Issue = {
@@ -113,12 +113,12 @@ export const DISCLAIMER_LINES: readonly string[] = [
 ];
 
 export const BRAND = {
-  headerLogo: `${ASSETS}/brand/advisor-loren.png`,
-  footerLogo: `${ASSETS}/brand/advisor-loren-footer.png`,
+  headerLogo: `${ASSETS}/brand/advisor-loren.svg`,
+  footerLogo: `${ASSETS}/brand/advisor-loren-footer.svg`,
 };
 
 export const ICONS = {
   chevronRight: `${ASSETS}/icons/chevron-right.png`,
-  sectionAccent: `${ASSETS}/icons/section-icon.png`,
-  externalLink: `${ASSETS}/icons/external-link.png`,
+  sectionAccent: `${ASSETS}/icons/section-icon.svg`,
+  externalLink: `${ASSETS}/icons/external-link.svg`,
 };

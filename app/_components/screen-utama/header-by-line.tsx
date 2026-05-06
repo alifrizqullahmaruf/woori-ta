@@ -11,6 +11,7 @@ export function HeaderByLine() {
           alt="어드바이저로렌"
           width={97}
           height={21}
+          unoptimized
           className="h-[21px] w-auto"
         />
       </div>

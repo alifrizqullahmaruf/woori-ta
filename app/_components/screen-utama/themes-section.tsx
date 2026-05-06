@@ -19,6 +19,7 @@ export function ThemesSection() {
               alt=""
               width={36}
               height={36}
+              unoptimized
               className="size-9 shrink-0 rounded-full object-contain"
             />
             <span className="flex-1 text-typo-small font-medium">

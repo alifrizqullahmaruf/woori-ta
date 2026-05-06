@@ -9,6 +9,7 @@ export function FooterDisclaimer() {
         alt="어드바이저로렌"
         width={97}
         height={21}
+        unoptimized
         className="h-[21px] w-auto"
       />
       <div className="mt-4 flex flex-col gap-3 text-typo-micro leading-snug text-gray-700">
