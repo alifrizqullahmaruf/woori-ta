@@ -91,4 +91,4 @@ export default function NewPage() {
 
 ## Design Reference
 
-Figma: [Woori_ta](https://www.figma.com/design/e2zvlbix7y9DKbgA7JcOTV/Woori_ta)
+Figma: [Woori_ta](https://www.figma.com/design/uvavtwpYnnqdiHIKeqkwyD/TA?node-id=0-1&t=ZfNl1svJGo79E3SP-1)
