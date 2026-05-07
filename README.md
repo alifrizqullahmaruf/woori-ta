@@ -1,37 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Woori-ta
+
+AI-powered investment insight dashboard for Woori Bank customers, built from Figma design by AdvisorLoren.
+
+## Pages
+
+| Route | Description |
+|---|---|
+| `/` | Home — hottest stocks with mention count & tags |
+| `/barchart` | Sentiment as horizontal segmented bar |
+| `/pie` | Sentiment as pie chart |
+| `/wordcloud` | Sentiment as word cloud |
+
+## Stack
+
+- **Next.js 16** (App Router, Server Components)
+- **React 19** + **TypeScript 5**
+- **Tailwind CSS v4** (CSS-first, no config file)
+- **Chart.js** + **react-chartjs-2** (sparklines, pie chart)
+- **Noto Sans KR** + **Lato** (Google Fonts)
+
+## Project Structure
+
+```
+app/
+  _components/
+    page-shell.tsx          ← shared page layout
+    info-modal.tsx          ← "?" info bottom sheet
+    stock-detail/           ← shared UI primitives
+      base-detail-card.tsx  ← card with sentimentSlot prop
+      stock-selector.tsx    ← NVDA / AMD / TSLA selector
+      mention-bar.tsx
+      segmented-bar.tsx
+      question-btn.tsx
+    screen-utama/           ← reusable sections
+
+  barchart/ | pie/ | wordcloud/
+    _components/            ← page-specific components
+    page.tsx
+
+dataset/                    ← all data as JSON (edit here)
+  stocks.json
+  trending.json
+  themes.json
+  issues.json
+  wordcloud.json
+  disclaimers.json
+
+public/images/screen-utama/ ← all static assets
+```
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Updating Data
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All content lives in `dataset/*.json` — no TypeScript required:
 
-## Learn More
+| File | Content |
+|---|---|
+| `stocks.json` | Stock data: mentions, sentiment, credibility |
+| `trending.json` | Trending stocks + sparklines |
+| `themes.json` | Investment themes |
+| `issues.json` | Market news |
+| `wordcloud.json` | Word cloud keywords per stock |
+| `disclaimers.json` | Footer disclaimer text |
 
-To learn more about Next.js, take a look at the following resources:
+## Adding a New Visualization Page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Create `app/newpage/_components/hottest-detail-new.tsx` with a custom `sentimentSlot`
+2. Create `app/newpage/page.tsx` using `PageShell`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```tsx
+export default function NewPage() {
+  return (
+    <PageShell
+      hottest={<NewHottestInteractive />}
+      trending={<TrendingBarchartSection />}
+      themes={<ThemesSection />}
+      issues={<IssuesSection />}
+    />
+  );
+}
+```
 
-## Deploy on Vercel
+## Design Reference
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# woori-ta
+Figma: [Woori_ta](https://www.figma.com/design/e2zvlbix7y9DKbgA7JcOTV/Woori_ta)
