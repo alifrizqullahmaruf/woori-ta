@@ -20,7 +20,7 @@ export function BaseDetailCard({ stock, sentimentSlot }: BaseDetailCardProps) {
   return (
     <div className="rounded-[20px] bg-primary-100/30 px-5 pt-6 pb-7">
       {/* Mention count + platform bars */}
-      <div className="flex items-start justify-between gap-4">
+      <div className="flex items-start justify-between gap-28">
         <div>
           <p className="typo-small text-gray-w700">Total mentions · last 5 days</p>
           <div className="mt-1 flex items-center gap-2">
@@ -34,7 +34,7 @@ export function BaseDetailCard({ stock, sentimentSlot }: BaseDetailCardProps) {
             </span>
           </div>
         </div>
-        <div className="flex min-w-40 flex-col gap-2">
+        <div className="flex flex-1 flex-col gap-2">
           {stock.platformMentions.map((p) => (
             <div key={p.label} className="flex items-center gap-2">
               <Image src={p.icon} alt={p.label} width={16} height={16} className="size-4 shrink-0 object-contain" />
@@ -57,9 +57,9 @@ export function BaseDetailCard({ stock, sentimentSlot }: BaseDetailCardProps) {
       )}
 
       {/* Sentiment — slot passed by consumer */}
-      <div className="mt-5">
+      <div className="mt-8">
         <p className="typo-small mb-2 flex items-center gap-1.5 font-medium text-gray-w900">
-          Sentiment Score
+          Sentiment Distribution
           <QuestionBtn onClick={() => setModal(SENTIMENT_MODAL)} />
         </p>
         {sentimentSlot}
@@ -88,7 +88,7 @@ export function BaseDetailCard({ stock, sentimentSlot }: BaseDetailCardProps) {
       <ul className="mt-4 flex flex-wrap justify-center gap-[3px]">
         {stock.tags.map((tag) => (
           <li key={tag} className="typo-tiny w-max rounded-[30px] bg-primary-650/20 px-1.5 py-px text-gray-w700">
-            {tag.length > 10 ? `${tag.slice(0, 10)}…` : tag}
+            {tag}
           </li>
         ))}
       </ul>

@@ -14,11 +14,11 @@ type StockSelectorProps = {
 
 export function StockSelector({ stocks, selectedTicker, onChange }: StockSelectorProps) {
   return (
-    <ul className="mx-auto mt-7 mb-[22px] flex w-[300px] items-center justify-center gap-2 sm:w-[400px] sm:gap-[9px]">
+    <ul className="mx-auto mt-7 mb-[22px] flex w-[300px] items-center justify-center gap-2 sm:w-[400px] sm:gap-[9px] ">
       {stocks.map((stock) => {
         const isSelected = stock.ticker === selectedTicker;
         return (
-          <li key={stock.ticker} className="w-1/3 max-w-[140px]">
+          <li key={stock.ticker} className="w-1/3 max-w-[2000px] px-1">
             <button
               type="button"
               onClick={() => onChange(stock.ticker)}

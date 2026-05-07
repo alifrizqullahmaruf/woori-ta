@@ -45,8 +45,8 @@ export function TrendingStocksSection() {
               <h3 className="typo-small flex-1 font-semibold text-gray-w900">
                 {stock.name}
               </h3>
-              <span className="font-numbers typo-micro ml-auto rounded-2xl bg-accent-cyan/10 font-bold text-accent-cyan">
-                Past 1 week {stock.weeklyDelta}
+              <span className="font-numbers typo-micro ml-auto rounded-2xl bg-accent-cyan/10 font-bold text-accent-cyan p-1">
+                {stock.weeklyDelta} over the past week 
               </span>
             </div>
             <div className="flex flex-col gap-0.5">

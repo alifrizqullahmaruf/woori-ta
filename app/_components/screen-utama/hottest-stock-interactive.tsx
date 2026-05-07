@@ -53,7 +53,7 @@ export function HottestStockInteractive() {
                 key={tag}
                 className="typo-tiny w-max rounded-[30px] bg-primary-650/20 px-1.5 py-px text-gray-w700"
               >
-                {tag.length > 10 ? `${tag.slice(0, 10)}…` : tag}
+                {tag}
               </li>
             ))}
           </ul>

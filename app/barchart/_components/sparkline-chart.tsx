@@ -32,6 +32,7 @@ export function SparklineChart({ priceData, mentionData }: SparklineChartProps) 
         tension: 0.4,
         fill: false,
         borderDash: [],
+        yAxisID: "yPrice",
       },
       {
         label: "Mentions",
@@ -42,6 +43,7 @@ export function SparklineChart({ priceData, mentionData }: SparklineChartProps) 
         tension: 0.4,
         fill: false,
         borderDash: [4, 3],
+        yAxisID: "yMentions",
       },
     ],
   };
@@ -56,7 +58,14 @@ export function SparklineChart({ priceData, mentionData }: SparklineChartProps) 
     },
     scales: {
       x: { display: false },
-      y: { display: false },
+      yPrice: {
+        display: false,
+        position: "left",
+      },
+      yMentions: {
+        display: false,
+        position: "right",
+      },
     },
     elements: {
       line: { capBezierPoints: false },

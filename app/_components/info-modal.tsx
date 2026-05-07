@@ -10,9 +10,9 @@ export type InfoModalContent = {
 };
 
 export const SENTIMENT_MODAL: InfoModalContent = {
-  title: "What is Sentiment Score?",
+  title: "What is Sentiment Distribution?",
   intro:
-    "Sentiment Score shows how people feel about this stock based on social media posts. Each mention is classified by AI into one of three categories:",
+    "Sentiment Distribution shows how people feel about this stock based on social media posts. Each mention is classified by AI into one of three categories:",
   bullets: [
     {
       color: "#60C864",

@@ -48,7 +48,7 @@ export function TrendingBarchartSection() {
               <h3 className="typo-small flex-1 font-semibold text-gray-w900">
                 {stock.name}
               </h3>
-              <span className="font-numbers typo-micro ml-4 shrink-0 font-bold text-accent-cyan">
+              <span className="font-numbers typo-micro ml-4 shrink-0 font-bold bg-accent-cyan/10 font-bold text-accent-cyan p-1 rounded-full">
                 {stock.weeklyDelta} over the past week
               </span>
             </div>
