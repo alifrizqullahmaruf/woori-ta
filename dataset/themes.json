@@ -1,0 +1,7 @@
+[
+  { "name": "MZ Consumer Platform", "delta": "+8.2%", "icon": "/images/screen-utama/themes/mz-platform.png" },
+  { "name": "Cryptocurrency",        "delta": "+8.1%", "icon": "/images/screen-utama/themes/crypto.svg" },
+  { "name": "Leisure",               "delta": "+7.5%", "icon": "/images/screen-utama/themes/leisure.svg" },
+  { "name": "Quantum Computing",     "delta": "+6%",   "icon": "/images/screen-utama/themes/quantum.svg" },
+  { "name": "Cloud",                 "delta": "+5.8%", "icon": "/images/screen-utama/themes/cloud.svg" }
+]

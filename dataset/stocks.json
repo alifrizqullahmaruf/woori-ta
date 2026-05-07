@@ -1,0 +1,53 @@
+[
+  {
+    "ticker": "NVDA",
+    "logo": "/images/screen-utama/top-three/nvda.png",
+    "rank": 1,
+    "mentionCount": 927,
+    "priceChange": { "value": 6.7, "direction": "down" },
+    "platformMentions": [
+      { "icon": "/images/screen-utama/icons/mention-flag-1.png", "label": "YouTube", "count": 86 },
+      { "icon": "/images/screen-utama/icons/mention-flag-2.png", "label": "Reddit",  "count": 650 },
+      { "icon": "/images/screen-utama/icons/mention-flag-3.png", "label": "X",       "count": 191 }
+    ],
+    "unusualSpike": "82% from new accounts within 24h",
+    "sentiment": { "positive": 65, "negative": 28, "neutral": 7 },
+    "credibility": { "verified": 55, "unverified": 45 },
+    "description": "NVDA is drawing attention as its data center revenue surged 209% amid the strength of the AI semiconductor sector, but concerns over valuation and controversy over its slower growth rate compared to other semiconductor stocks coexist.",
+    "tags": ["AI GPU Exclusive", "Strong semiconductor sector", "Ministry of National Defense AI Expansion"]
+  },
+  {
+    "ticker": "AMD",
+    "logo": "/images/screen-utama/top-three/amd.png",
+    "rank": 2,
+    "mentionCount": 643,
+    "priceChange": { "value": 8.4, "direction": "up" },
+    "platformMentions": [
+      { "icon": "/images/screen-utama/icons/mention-flag-1.png", "label": "YouTube", "count": 54 },
+      { "icon": "/images/screen-utama/icons/mention-flag-2.png", "label": "Reddit",  "count": 412 },
+      { "icon": "/images/screen-utama/icons/mention-flag-3.png", "label": "X",       "count": 177 }
+    ],
+    "unusualSpike": null,
+    "sentiment": { "positive": 74, "negative": 18, "neutral": 8 },
+    "credibility": { "verified": 68, "unverified": 32 },
+    "description": "AMD's MI300X AI accelerator is outperforming rivals in memory bandwidth, attracting major cloud providers. Strong server CPU share gains are reinforcing confidence in AMD's long-term competitive position.",
+    "tags": ["MI300X Launch", "AI Accelerator", "Server CPU Growth"]
+  },
+  {
+    "ticker": "TSLA",
+    "logo": "/images/screen-utama/top-three/tsla.png",
+    "rank": 3,
+    "mentionCount": 512,
+    "priceChange": { "value": 3.1, "direction": "down" },
+    "platformMentions": [
+      { "icon": "/images/screen-utama/icons/mention-flag-1.png", "label": "YouTube", "count": 38 },
+      { "icon": "/images/screen-utama/icons/mention-flag-2.png", "label": "Reddit",  "count": 310 },
+      { "icon": "/images/screen-utama/icons/mention-flag-3.png", "label": "X",       "count": 164 }
+    ],
+    "unusualSpike": "61% from new accounts within 24h",
+    "sentiment": { "positive": 41, "negative": 47, "neutral": 12 },
+    "credibility": { "verified": 42, "unverified": 58 },
+    "description": "Tesla is in the spotlight as FSD v12 rollout gains traction and the Robotaxi launch event draws near. EV price cuts and margin compression remain key investor concerns.",
+    "tags": ["FSD v12 Rollout", "Robotaxi Hype", "Energy Storage Record"]
+  }
+]

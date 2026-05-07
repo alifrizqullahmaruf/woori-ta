@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Noto_Sans_KR } from "next/font/google";
+import { Geist, Geist_Mono, Lato, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,13 +15,23 @@ const geistMono = Geist_Mono({
 const notoSansKr = Noto_Sans_KR({
   variable: "--font-noto-kr",
   subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  display: "swap",
+});
+
+const lato = Lato({
+  variable: "--font-lato",
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Woori-ta — AI 투자 인사이트",
-  description:
-    "어드바이저로렌이 우리은행 고객에게 제공하는 AI 기반 투자 분석 서비스 (테스트 단계)",
+  icons: {
+    icon: "/wooriIcon.png",
+  },
+  title: "Woori-ta — AI Investment Insights",
+  description: "AI-powered investment analysis service for Woori Bank customers by AdvisorLoren (testing phase)",
 };
 
 export default function RootLayout({
@@ -32,9 +42,11 @@ export default function RootLayout({
   return (
     <html
       lang="ko"
-      className={`${geistSans.variable} ${geistMono.variable} ${notoSansKr.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${notoSansKr.variable} ${lato.variable} typo-base mx-auto md:max-w-[720px]`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full bg-neutral-500 font-sans antialiased">
+        {children}
+      </body>
     </html>
   );
 }

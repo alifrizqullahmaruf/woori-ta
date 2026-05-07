@@ -2,79 +2,110 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #333333;
 }
 
-/*
- * Design tokens for Woori-ta.
- * Color values are visual approximations of the palette in .figma-color-system.png.
- * TODO: verify exact hex values with a color picker against the Figma source of truth.
- */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
   --font-sans: var(--font-noto-kr), var(--font-geist-sans), Arial, Helvetica, sans-serif;
   --font-mono: var(--font-geist-mono);
+  --font-numbers: var(--font-lato), 'Lato', Arial, sans-serif;
 
-  /* Primary blue ramp */
-  --color-primary-100: #ebf2ff;
-  --color-primary-200: #d6e4ff;
-  --color-primary-300: #b3ccff;
-  --color-primary-400: #80a8ff;
-  --color-primary-450: #6699ff;
-  --color-primary-500: #3d7dff;
-  --color-primary-550: #2e72f5;
-  --color-primary-600: #1f66e0;
-  --color-primary-650: #1858c2;
-  --color-primary-700: #144aa3;
-  --color-primary-750: #103e85;
-  --color-primary-800: #0c3066;
-  --color-primary-850: #082247;
-  --color-primary-900: #051538;
+  /* Primary blue ramp (production values) */
+  --color-primary-50:  #f0f5ff;
+  --color-primary-100: #e1ecff;
+  --color-primary-600: #82b1ff;
+  --color-primary-650: #86a7cc;
+  --color-primary-700: #66b6ff;
+  --color-primary-750: #4590ff;
+  --color-primary-800: #2589f4;
+  --color-primary-850: #2684ff;
+  --color-primary-900: #2962ff;
 
   /* Neutrals */
-  --color-gray-100: #f5f5f5;
-  --color-gray-200: #e5e5e5;
-  --color-gray-300: #d4d4d4;
-  --color-gray-400: #b3b3b3;
-  --color-gray-500: #8a8a8a;
-  --color-gray-600: #737373;
-  --color-gray-700: #525252;
-  --color-gray-800: #333333;
-  --color-gray-900: #1a1a1a;
+  --color-gray-100:   #f5f5f5;
+  --color-gray-w200:  #dddddd;
+  --color-gray-w400:  #b2b3b9;
+  --color-gray-w600:  #8c8d96;
+  --color-gray-w700:  #686e75;
+  --color-gray-w800:  #3f4150;
+  --color-gray-w900:  #333333;
+
+  /* Page background (gray sidebar) */
+  --color-neutral-500: #737373;
+
+  /* Surface */
+  --color-divider: #fafafa;
+  --color-border:  #e9ecef;
 
   /* Accents */
-  --color-accent-cyan: #00bcd4;
-  --color-accent-purple: #9b66ff;
-  --color-accent-navy: #1a237e;
+  --color-accent-cyan:   #00b8d4;
+  --color-accent-red:    #e34850;
+  --color-accent-purple: #a56eff;
+  --color-accent-navy:   #002d9c;
 
-  /* Warning ramp */
-  --color-warning-300: #ffeb6b;
-  --color-warning-400: #ffd54a;
-  --color-warning-500: #ffb433;
-  --color-warning-600: #ff8a3d;
-  --color-warning-700: #f4511e;
+  /* Warning / Error */
+  --color-warning-600: #fba52d;
+  --color-warning-700: #fa8c16;
+  --color-error-700:   #ff0404;
 
-  /* Status */
-  --color-red-100: #d96666;
-  --color-error-100: #ff1d1d;
+  /* Theme circle colors */
+  --color-theme-0-bg:   #2684FF33;
+  --color-theme-0-text: #2962FF;
+  --color-theme-1-bg:   #A56EFF33;
+  --color-theme-1-text: #A56EFF;
+  --color-theme-2-bg:   #60C86433;
+  --color-theme-2-text: #60C864;
+  --color-theme-3-bg:   #FA8C1633;
+  --color-theme-3-text: #FA8C16;
+  --color-theme-4-bg:   #E3485033;
+  --color-theme-4-text: #E34850;
+}
 
-  /* Semantic alias used by Figma frame "Footer [bg-border]" */
-  --color-border: var(--color-gray-100);
-
-  /* Typography ramp (sizes/line-heights derived from Figma text frame measurements) */
-  --text-typo-large: 1.25rem;
-  --text-typo-large--line-height: 1.75rem;
-  --text-typo-small: 1rem;
-  --text-typo-small--line-height: 1.5rem;
-  --text-typo-tiny: 0.875rem;
-  --text-typo-tiny--line-height: 1.25rem;
-  --text-typo-micro: 0.75rem;
-  --text-typo-micro--line-height: 1rem;
+@layer components {
+  .typo-xlarge {
+    font-size: 1.5rem;
+    line-height: 2.125rem;
+    letter-spacing: -0.05em;
+  }
+  .typo-large {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.05em;
+  }
+  .typo-medium {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.03em;
+  }
+  .typo-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+  }
+  .typo-small {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+  }
+  .typo-tiny {
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.03em;
+  }
+  .typo-micro {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: -0.03em;
+  }
+  .font-numbers {
+    font-family: var(--font-numbers);
+    font-variant-numeric: tabular-nums;
+  }
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
 }

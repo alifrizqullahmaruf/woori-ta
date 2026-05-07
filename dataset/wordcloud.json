@@ -1,0 +1,68 @@
+[
+  {
+    "ticker": "NVDA",
+    "words": [
+      { "text": "concern",     "weight": 5, "sentiment": "negative" },
+      { "text": "correction",  "weight": 4, "sentiment": "negative" },
+      { "text": "PRESSURE",    "weight": 4, "sentiment": "negative" },
+      { "text": "overvalued",  "weight": 3, "sentiment": "negative" },
+      { "text": "bubble",      "weight": 3, "sentiment": "negative" },
+      { "text": "downturn",    "weight": 2, "sentiment": "negative" },
+      { "text": "inflated",    "weight": 2, "sentiment": "negative" },
+      { "text": "overpriced",  "weight": 2, "sentiment": "negative" },
+      { "text": "opportunity", "weight": 3, "sentiment": "positive" },
+      { "text": "outperform",  "weight": 2, "sentiment": "positive" },
+      { "text": "expansion",   "weight": 2, "sentiment": "positive" },
+      { "text": "dominance",   "weight": 3, "sentiment": "positive" },
+      { "text": "analysis",    "weight": 1, "sentiment": "neutral" },
+      { "text": "volatility",  "weight": 1, "sentiment": "neutral" },
+      { "text": "chip",        "weight": 1, "sentiment": "neutral" },
+      { "text": "margin",      "weight": 1, "sentiment": "neutral" },
+      { "text": "high",        "weight": 1, "sentiment": "neutral" },
+      { "text": "cut",         "weight": 1, "sentiment": "neutral" },
+      { "text": "export",      "weight": 1, "sentiment": "neutral" },
+      { "text": "type",        "weight": 1, "sentiment": "neutral" }
+    ]
+  },
+  {
+    "ticker": "AMD",
+    "words": [
+      { "text": "momentum",    "weight": 5, "sentiment": "positive" },
+      { "text": "growth",      "weight": 4, "sentiment": "positive" },
+      { "text": "OPPORTUNITY", "weight": 4, "sentiment": "positive" },
+      { "text": "accelerator", "weight": 3, "sentiment": "positive" },
+      { "text": "adoption",    "weight": 3, "sentiment": "positive" },
+      { "text": "MI300X",      "weight": 3, "sentiment": "positive" },
+      { "text": "cloud",       "weight": 2, "sentiment": "positive" },
+      { "text": "rival",       "weight": 3, "sentiment": "negative" },
+      { "text": "competition", "weight": 2, "sentiment": "negative" },
+      { "text": "lagging",     "weight": 2, "sentiment": "negative" },
+      { "text": "skepticism",  "weight": 2, "sentiment": "negative" },
+      { "text": "execution",   "weight": 2, "sentiment": "neutral" },
+      { "text": "roadmap",     "weight": 2, "sentiment": "neutral" },
+      { "text": "server",      "weight": 1, "sentiment": "neutral" },
+      { "text": "margin",      "weight": 1, "sentiment": "neutral" },
+      { "text": "supply",      "weight": 1, "sentiment": "neutral" }
+    ]
+  },
+  {
+    "ticker": "TSLA",
+    "words": [
+      { "text": "risk",        "weight": 5, "sentiment": "negative" },
+      { "text": "slowdown",    "weight": 4, "sentiment": "negative" },
+      { "text": "CONTROVERSY", "weight": 4, "sentiment": "negative" },
+      { "text": "declining",   "weight": 3, "sentiment": "negative" },
+      { "text": "brand",       "weight": 3, "sentiment": "negative" },
+      { "text": "innovation",  "weight": 4, "sentiment": "positive" },
+      { "text": "robotaxi",    "weight": 3, "sentiment": "positive" },
+      { "text": "FSD",         "weight": 3, "sentiment": "positive" },
+      { "text": "energy",      "weight": 2, "sentiment": "positive" },
+      { "text": "record",      "weight": 2, "sentiment": "positive" },
+      { "text": "pricing",     "weight": 2, "sentiment": "neutral" },
+      { "text": "delivery",    "weight": 2, "sentiment": "neutral" },
+      { "text": "market",      "weight": 1, "sentiment": "neutral" },
+      { "text": "shares",      "weight": 1, "sentiment": "neutral" },
+      { "text": "margins",     "weight": 1, "sentiment": "neutral" }
+    ]
+  }
+]

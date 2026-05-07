@@ -8,7 +8,7 @@ export function HeaderByLine() {
         <span>by</span>
         <Image
           src={BRAND.headerLogo}
-          alt="어드바이저로렌"
+          alt="AdvisorLoren"
           width={97}
           height={21}
           unoptimized
